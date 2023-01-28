@@ -1,5 +1,11 @@
-import style from './Container.style';
+import { ReactNode } from 'react';
 
-export const Container = ({ children }) => {
-  return <style.root>{children}</style.root>;
+import * as S from './Container.style';
+
+interface ContainerProps {
+  children: ReactNode
 }
+
+export const Container = ({ children }: ContainerProps) => {
+  return <S.Root>{children}</S.Root>;
+};

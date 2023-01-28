@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const root = styled.div`
+export const Root = styled.div`
   height: 100vh;
   width: 100vw;
   max-width: 1200px;
@@ -9,7 +9,3 @@ const root = styled.div`
   // flex-direction: row;
   // justify-content: center;
 `;
-
-export default {
-  root
-}

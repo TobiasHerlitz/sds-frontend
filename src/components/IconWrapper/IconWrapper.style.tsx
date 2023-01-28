@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-const root = styled.div`
+export const Root = styled.div`
   height: 160px;
   width: 200px;
 `;
-
-export default {
-  root
-};

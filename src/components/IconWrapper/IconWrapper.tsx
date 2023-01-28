@@ -1,9 +1,13 @@
-import styled from './IconWrapper.style';
+import * as S from './IconWrapper.style';
 
-export const IconWrapper = ({ Icon }) => {
-  return (
-    <styled.root>
-      <Icon style={{ height: '100%', width: '100%' }}/>
-    </styled.root>
-  );
+interface IconWrapperProps {
+  Icon: any
 }
+
+export const IconWrapper = ({ Icon }: IconWrapperProps) => {
+  return (
+    <S.Root>
+      <Icon style={{ height: '100%', width: '100%' }}/>
+    </S.Root>
+  );
+};

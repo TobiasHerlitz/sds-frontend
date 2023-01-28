@@ -1,6 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-const iconWrapper = styled.div`
+export const IconWrapper = styled.div`
   color: ${({ theme }) => theme.white};
   transition: opacity 150ms ease-out 50ms, transform 150ms ease-out 50ms;
   padding: 20px;
@@ -9,20 +9,7 @@ const iconWrapper = styled.div`
   height: auto;
 `;
 
-const content = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // justify-content: f;
-  overflow: hidden;
-  border-radius: 6px;
-  height: 100%;
-  width: 100%;
-  border: 1px solid ${({ theme }) => theme.white};
-`
-
-const innerCard = styled.div`
+export const InnerCard = styled.div`
   position: absolute;
   width: 100%;
   height: 140px;
@@ -39,7 +26,8 @@ const innerCard = styled.div`
   transition: bottom 150ms ease-out 50ms;
 `;
 
-const root = styled.div`
+// Holds references to IconWrapper and InnerCard, declaration needs to be below
+export const Root = styled.div`
   background: ${({ theme }) => theme.three};
   width: 300px;
   height: 300px;
@@ -54,38 +42,38 @@ const root = styled.div`
   :hover {
     box-shadow: 4px 3px 10px #00000055;
 
-    ${iconWrapper} {
+    ${IconWrapper} {
       transform: scale(0.7) translateY(-40px);
       opacity: 0.2;
     }
 
-    ${innerCard} {
+    ${InnerCard} {
       bottom: 0px;
     }
   }
 `;
 
+export const Content = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: f;
+  overflow: hidden;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid ${({ theme }) => theme.white};
+`;
 
-
-const cardHeader = styled.h1`
+export const CardHeader = styled.h1`
   margin: 16px 0 8px 0;
   text-transform: uppercase;
 `;
 
-const description = styled.p`
+export const Description = styled.p`
   margin-top: 0;
   margin-bottom: 16px;
   font-style: italic;
   text-align: center;
 `;
-
-
-
-export default {
-  root,
-  iconWrapper,
-  cardHeader,
-  description,
-  innerCard,
-  content
-};

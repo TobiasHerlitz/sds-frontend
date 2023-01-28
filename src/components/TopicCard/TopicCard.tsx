@@ -1,21 +1,27 @@
-import styled from './TopicCardNew.style';
+import * as S from './TopicCard.style';
+
+interface TopicCardProps {
+  heading: string
+  quote: string
+  Icon: any
+}
 
 export const TopicCard = ({
   heading = 'PLACEHOLDER',
   quote = 'Description',
   Icon
-}) => {
+}: TopicCardProps) => {
   return (
-    <styled.root>
-      <styled.content>
-        <styled.iconWrapper>
+    <S.Root>
+      <S.Content>
+        <S.IconWrapper>
           <Icon style={{ height: '100%', width: '100%' }}/>
-        </styled.iconWrapper>
-        <styled.innerCard>
-          <styled.cardHeader>{heading}</styled.cardHeader>
-          <styled.description>"{quote}"</styled.description>
-        </styled.innerCard>
-      </styled.content>
-    </styled.root>
+        </S.IconWrapper>
+        <S.InnerCard>
+          <S.CardHeader>{heading}</S.CardHeader>
+          <S.Description>"{quote}"</S.Description>
+        </S.InnerCard>
+      </S.Content>
+    </S.Root>
   );
 };

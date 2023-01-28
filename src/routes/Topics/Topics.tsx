@@ -5,12 +5,12 @@ import { ReactComponent as Waiter } from '@images/waiter.svg';
 import { ReactComponent as Conveyor } from '@images/conveyor.svg';
 import { ReactComponent as Tree } from '@images/tree.svg';
 
-import styled from './Topics.style';
+import * as S from './Topics.style';
 
 export const Topics = () => {
   return (
     <Container>
-      <styled.grid>
+      <S.Grid>
         <TopicCard
           heading="classes"
           quote="Yo dawg. I heard you like objects so we put an object in your object so you can object-orient while you object-orient"
@@ -31,7 +31,7 @@ export const Topics = () => {
           quote="Git gud scrub"
           Icon={Tree}
         />
-      </styled.grid>
+      </S.Grid>
     </Container>
   );
 };
