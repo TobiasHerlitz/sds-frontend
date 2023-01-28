@@ -1,7 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-import { ReactComponent as Factory } from '/src/assets/images/factory.svg';
-
 const root = styled.div`
   background: ${({ theme }) => theme.three};
   position: relative;
@@ -44,13 +42,6 @@ const root = styled.div`
     content: " ";
     border: 1px solid ${({ theme }) => theme.white};
   }
-`;
-
-const factoryIcon = styled(Factory)`
-  fill: ${({ theme }) => theme.white};
-  transition: opacity 150ms ease-out 50ms;
-  width: 200px;
-  height: auto;
 `;
 
 const textInfo = styled.div`

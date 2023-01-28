@@ -1,7 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-import { ReactComponent as Factory } from '/src/assets/images/factory.svg';
-
 const iconWrapper = styled.div`
   color: ${({ theme }) => theme.white};
   transition: opacity 150ms ease-out 50ms, transform 150ms ease-out 50ms;

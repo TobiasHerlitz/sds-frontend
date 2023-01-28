@@ -1,5 +1,4 @@
 import styled from './TopicCardNew.style';
-import { ReactComponent as Factory } from '/src/assets/images/factory.svg';
 
 export const TopicCard = ({
   heading = 'PLACEHOLDER',

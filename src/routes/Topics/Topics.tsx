@@ -1,9 +1,9 @@
-import { Container, TopicCard } from '/src/components';
+import { Container, TopicCard } from '@components';
 
-import { ReactComponent as Factory } from '/src/assets/images/factory.svg';
-import { ReactComponent as Waiter } from '/src/assets/images/waiter.svg';
-import { ReactComponent as Conveyor } from '/src/assets/images/conveyor.svg';
-import { ReactComponent as Tree } from '/src/assets/images/tree.svg';
+import { ReactComponent as Factory } from '@images/factory.svg';
+import { ReactComponent as Waiter } from '@images/waiter.svg';
+import { ReactComponent as Conveyor } from '@images/conveyor.svg';
+import { ReactComponent as Tree } from '@images/tree.svg';
 
 import styled from './Topics.style';
 
