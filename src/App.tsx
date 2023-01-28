@@ -10,7 +10,7 @@ export const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Navbar />
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 };
