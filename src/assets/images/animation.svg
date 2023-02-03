@@ -1,0 +1,6 @@
+<svg class="all" stroke-width="10" stroke-linecap="round" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path id="two" d="M20,50 L80,50" />
+  <path class="all" id="one" d="M20,25 L80,25" />
+  <path id="three" d="M20,75 L80,75" />
+
+</svg>
