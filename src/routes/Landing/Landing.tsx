@@ -1,17 +1,9 @@
-import { useState } from 'react';
-import { ReactComponent as Animation } from '@images/animation.svg';
-
-import * as S from './Landing.style';
+import { Container } from '@components';
 
 export const Landing = () => {
-  const [openNav, setOpenNav] = useState(false);
-  console.log(openNav);
   return (
-    <>
+    <Container>
       <p>This is landing</p>
-      <S.AnimationWrapper openNav={openNav} onClick={() => setOpenNav(!openNav)}>
-        <Animation />
-      </S.AnimationWrapper>
-    </>
+    </Container>
   );
 };

@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-export const AnimationWrapper = styled("div")<{ openNav: boolean }>`
-  margin: 100px;
-  width: 400px;
-  border: 1px solid black;
-  stroke: black;
+export const AnimationWrapper = styled('div')<{ isOpen: boolean }>`
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 
-  ${({ openNav }: any) => !openNav && `
+  ${({ isOpen }: any) => !isOpen && `
     #one {
       transition: 0.4s;
       d: path("M20,25 L80,25");
@@ -14,7 +13,6 @@ export const AnimationWrapper = styled("div")<{ openNav: boolean }>`
 
     #two {
       transition: 0.4s;
-      stroke: black;
       d: path("M20,50 L80,50");
     }
 
@@ -25,23 +23,20 @@ export const AnimationWrapper = styled("div")<{ openNav: boolean }>`
   `
   }
 
-  ${({ openNav }: any) => openNav && `
+  ${({ isOpen }: any) => isOpen && `
     #one {
       transition: 0.4s;
       d: path("M20,20 L80,80");
-      stroke-width: 16px;
     }
 
     #two {
       transition: 0.4s;
-      stroke: white;
       d: path("M50,50 L50,50");
     }
 
     #three {
       transition: 0.4s;
       d: path("M20,80 L80,20");
-      stroke-width: 16px;
     }
   `
   }

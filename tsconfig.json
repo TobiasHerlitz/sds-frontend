@@ -17,7 +17,8 @@
     "jsx": "react-jsx",
     "paths": {
       "@components": ["./src/components"],
-      "@routes": ["./src/routes"]
+      "@routes": ["./src/routes"],
+      "@hooks": ["./src/hooks"]
     }
   },
   "include": ["src"],

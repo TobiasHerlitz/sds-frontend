@@ -11,7 +11,8 @@ export default defineConfig({
     alias: {
       '@components': path.resolve(__dirname, './src/components'),
       '@images': path.resolve(__dirname, './src/assets/images'),
-      '@routes': path.resolve(__dirname, './src/routes')
+      '@routes': path.resolve(__dirname, './src/routes'),
+      '@hooks': path.resolve(__dirname, './src/hooks')
     }
   },
   plugins: [react(), svgr(), checker({typescript: true})],
