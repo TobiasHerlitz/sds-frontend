@@ -8,9 +8,10 @@ const carolinaBlue = '#5299D3';
 const midnightGreenEagleGreen = '#0B5563';
 const lightSteelBlue = '#A2BCE0';
 
+const fromFigmaOne = '#43596D';
 
 export const theme = {
-  one: maximumBluePurple,
+  one: fromFigmaOne,
   two: carolinaBlue,
   three: midnightGreenEagleGreen,
   four: lightSteelBlue,

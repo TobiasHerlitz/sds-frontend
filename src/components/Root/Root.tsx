@@ -5,7 +5,7 @@ export const Root = () => {
   return (
     <>
       <Navbar />
-      <ThemeToggleIcon />
+      {/*<ThemeToggleIcon />*/}
       <Outlet />
     </>
   );

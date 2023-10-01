@@ -13,15 +13,15 @@ export const TopicCard = ({
 }: TopicCardProps) => {
   return (
     <S.Root>
-      <S.Content>
-        <S.IconWrapper>
+      <S.IconWrapper>
+        <S.IconInset>
           <Icon style={{ height: '100%', width: '100%' }}/>
-        </S.IconWrapper>
-        <S.InnerCard>
-          <S.CardHeader>{heading}</S.CardHeader>
-          <S.Description>"{quote}"</S.Description>
-        </S.InnerCard>
-      </S.Content>
+        </S.IconInset>
+      </S.IconWrapper>
+        <S.TextWrapper id="textWrapper">
+          <h2>{heading}</h2>
+          <p>"{quote}"</p>
+        </S.TextWrapper>
     </S.Root>
   );
 };
